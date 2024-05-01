@@ -7,5 +7,5 @@ import"./assets/reset-df635d97.js";import{S as p}from"./assets/vendor-4842761a.j
       alt="${e}"
     />
   </a>
-</li>`)});c.insertAdjacentHTML("afterbegin",i.join(""));let n=new p(".gallery a",{overlayOpacity:.8,captionSelector:"img",captionDelay:250,captionPosition:"bottom",captionsData:"alt",className:"simple-lightbox",closeText:'<a href="#" class="closeBtn"><svg width=14 height=14><use href="../img/symbol-defs.svg#icon-Vector"></use></svg></a>',navText:['<svg width=11 height = 20 ><use href="../img/symbol-defs.svg#icon-Vector-2"></use></svg>','<svg width=11 height=20><use href="../img/symbol-defs.svg#icon-Vector-1"></use></svg>']});n.on("show.simplelightbox");
+</li>`)});c.insertAdjacentHTML("afterbegin",i.join(""));let n=new p(".gallery a",{overlayOpacity:.8,captionSelector:"img",captionDelay:250,captionPosition:"bottom",captionsData:"alt",className:"simple-lightbox",closeText:'<a href="#" class="closeBtn"><svg width=14 height=14><use href="./img/symbol-defs.svg#icon-Vector"></use></svg></a>',navText:['<svg width=11 height = 20 ><use href="./img/symbol-defs.svg#icon-Vector-2"></use></svg>','<svg width=11 height=20><use href="./img/symbol-defs.svg#icon-Vector-1"></use></svg>']});n.on("show.simplelightbox");
 //# sourceMappingURL=commonHelpers.js.map
