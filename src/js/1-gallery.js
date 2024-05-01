@@ -90,8 +90,5 @@ let newGallery = new SimpleLightbox('.gallery a', {
   captionPosition: 'bottom',
   captionsData: "alt",
   className: 'simple-lightbox',
-  closeText: `<a href="#" class="closeBtn"><svg width=14 height=14><use href="./img/symbol-defs.svg#icon-Vector"></use></svg></a>`,
-  navText: [`<svg width=11 height = 20 ><use href="./img/symbol-defs.svg#icon-Vector-2"></use></svg>`,
-    `<svg width=11 height=20><use href="./img/symbol-defs.svg#icon-Vector-1"></use></svg>`]
 });
 newGallery.on('show.simplelightbox');
