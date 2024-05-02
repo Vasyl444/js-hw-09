@@ -25,7 +25,7 @@ form.addEventListener("submit", (event) => {
         if (elem !== " ") {
             isValidMessage.push(elem);
         } 
-    }
+    };
     const validEmail = Array.from(form.elements.email.value);
     const isValidEmail = [];
     for (let elem of validEmail) {
