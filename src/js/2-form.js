@@ -36,7 +36,7 @@ form.addEventListener("submit", (event) => {
     if (form.elements.email.value === "" || form.elements.message.value === "") {
         alert("Fill please all fields");
     } else if (isValidMessage.length === 0 || isValidEmail.length === 0) {
-        return
+        return;
     } else {
         console.log(formData);
         formData.email = "";
