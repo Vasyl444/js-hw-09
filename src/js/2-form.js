@@ -6,6 +6,11 @@ const form = document.querySelector(".feedback-form");
 const localStorageKey = JSON.parse(localStorage.getItem("feedback-form-state"));
 formData = localStorageKey ?? formData;
 
+const allert = '<div class="allert">Fill please all fields</div>';
+form.insertAdjacentHTML("afterend", allert);
+const allertDiv = document.querySelector(".allert");
+form.addEventListener("click", () => { allertDiv.classList.remove("open-allert") });
+
 form.addEventListener("input", (event) => {
     if (event.target === form.elements.email) {
         formData.email = event.target.value.trim();
@@ -14,9 +19,9 @@ form.addEventListener("input", (event) => {
     };
     localStorage.setItem("feedback-form-state", JSON.stringify(formData));   
 });
-
 form.elements.email.value = formData.email;
 form.elements.message.value = formData.message;
+
 form.addEventListener("submit", (event) => {
     event.preventDefault();
     const validMessage = Array.from(form.elements.message.value);
@@ -34,7 +39,7 @@ form.addEventListener("submit", (event) => {
         } 
     }
     if (form.elements.email.value === "" || form.elements.message.value === "") {
-        alert("Fill please all fields");
+        allertDiv.classList.add("open-allert");
     } else if (isValidMessage.length === 0 || isValidEmail.length === 0) {
         return;
     } else {
